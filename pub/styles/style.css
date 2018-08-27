@@ -8,7 +8,7 @@ input,
 textarea {
   transition: all 0.5s ease-in-out;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   body {
     background: url('../img/shadow_bg.jpg') repeat-x top, url('../img/shadow_bg_bottom.jpg') repeat-x bottom;
   }
@@ -51,7 +51,7 @@ textarea {
     grid-column-start: footer-start;
   }
   .title-publ {
-    font: 32px 'TornadoCyrBold';
+    font: 32px 'TornadoCyrRegular';
     color: #000;
   }
   .logo {
