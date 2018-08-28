@@ -1,18 +1,6 @@
-// imports
 
-@import '../styles/variables.less';
-@import '../styles/fonts.css';
-@import '../styles/reset.css';
 
-@import '../styles/reset.css';
-
-// animation elements
-
-a, a:hover, li, img, input, textarea {
-	transition: all 0.5s ease-in-out;
-}
-
-@media only screen and (min-width : @mobile) {
+@media only screen and (min-width : 0px) and (max-width : @mobile) {
 
 	// default settings
 
@@ -92,6 +80,7 @@ a, a:hover, li, img, input, textarea {
 		margin-bottom: 90px;
 		width: 310px;
 		height: 64px;
+		zoom: 0.7;
 	}
 
 	.tm-container__logo_small {
@@ -112,8 +101,8 @@ a, a:hover, li, img, input, textarea {
 			text-align: center;
 
 			a {
-				font: 36px 'ZyalvaRegular';
-				line-height: 82px;
+				font: 26px 'ZyalvaRegular';
+				line-height: 62px;
 				text-transform: uppercase;
 				text-decoration: none;
 				color: @black;
