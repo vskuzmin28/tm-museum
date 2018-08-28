@@ -8,12 +8,13 @@ html(lang='ru')
     link(rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32")
     link(rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96")
     title ТЯЖМАШ | Интерактивный стол
+    link(rel='stylesheet', href='../styles/animate.css')
     link(rel='stylesheet', href='../styles/style.css')
   body
 
     // main
 
-    main.tm-local
+    main.tm-local.wow.fadeIn
 
       // container
 
@@ -47,3 +48,9 @@ html(lang='ru')
           img.image-product-small.inline(src="../img/29.jpg" alt="@@")
 
         include ../blocks/block-footer/footer.pug
+
+    // scripts
+
+    script(src="../js/jquery-3.2.1.min.js")
+    script(src="../js/wow.min.js")
+    script(src="../js/scripts.js")

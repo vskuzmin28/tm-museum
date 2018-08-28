@@ -123,3 +123,5 @@ $('.tab-link-three-setting-engine').click(function(){
 	$('.tab-content-three-setting-engine').show();
 	$('.tab-content-two-setting-engine, .tab-content-one-setting-engine').hide();
 })
+
+new WOW().init();

@@ -8,20 +8,21 @@ html(lang='ru')
     link(rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32")
     link(rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96")
     title ТЯЖМАШ | Интерактивный стол
+    link(rel='stylesheet', href='../styles/animate.css')
     link(rel='stylesheet', href='../styles/style.css')
   body
 
     // main
 
-    main.tm-main
+    main.tm-main.wow.fadeIn(data-wow-delay="1s")
 
       // container
 
       .tm-container.tm-container_small
 
-        img.logo.tm-container__logo(src="../img/logo.png" alt="@@")
+        img.logo.tm-container__logo.wow.fadeIn(src="../img/logo.png" alt="@@" data-wow-delay="2s")
 
-        ul.navigation.tm-container__navigation
+        ul.navigation.tm-container__navigation.wow.fadeIn(data-wow-delay="3s")
 
           // item
 
@@ -51,3 +52,8 @@ html(lang='ru')
             a(href="local.html" title="")
               | Видеогалерея                        
 
+    // scripts
+
+    script(src="../js/jquery-3.2.1.min.js")
+    script(src="../js/wow.min.js")
+    script(src="../js/scripts.js")
