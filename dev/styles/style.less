@@ -4,7 +4,7 @@
 @import '../styles/fonts.css';
 @import '../styles/reset.css';
 
-@import '../styles/reset.css';
+//@import '../styles/reset.css';
 
 // animation elements
 
@@ -33,15 +33,17 @@ a, a:hover, li, img, input, textarea {
     	justify-items: center; // horizontal
 		align-items: center; // vertical
 		background: url('../img/build.png') no-repeat 50% 74%;
+		grid-template-columns: 1fr;
 	}
 
 	.tm-local {
 		margin: 0 5%;
-    	width: auto;
+    	width: auto !important;
     	height: 100vh;
     	overflow: hidden;
-    	display: grid; // grid view
-		justify-items: center; // horizontal
+		display: block !important; // grid view
+		
+		//justify-items: center; // horizontal
     	//align-items: center; // vertical	
 	}
 
@@ -51,25 +53,96 @@ a, a:hover, li, img, input, textarea {
 
 	.tm-content {
 		margin: 2% 0 2% 0;
-	
-		padding-right: 4%;
+		padding-right: 10px !important;
+
+		width: auto;
 
 		height: 66vh;
+		overflow: scroll;
 
-		//background: @red;
+		// text styles
 
 		p {
-			margin-bottom: 30px;
+			margin-bottom: 10px !important;
 			font: 22px 'robotoregular';
 			line-height: 34px;
 		}
 
-		overflow: scroll;
+		small {
+			font: 16px 'robotoitalic';
+			line-height: 24px;
+		}
+
+		span {
+			font-family: 'robotomedium';
+		}
+
+		h1 {
+			margin-bottom: 10px;
+			font: 32px 'robotobold';
+		}
+
+		h2 {
+			margin-bottom: 14px;
+			font: 24px 'robotobold';
+		}
+
+		h3 {
+			margin-bottom: 10px;
+			font: 16px 'robotobold';
+		}
+
+		hr {
+			margin: 20px 0;
+			border: 0;
+			height: 1px;
+			outline: 0;
+			width: 100%;
+			background: @grey;
+		}
+
+		img {
+			display: block;
+			//padding: 10px;
+			//background: @white;
+			//border: 1px solid @grey;
+		}
+
+		// images
+
+		.image-product-small {
+			width: 220px;
+			height: auto;
+		}
+
+		.image-product-normal {
+			width: 420px;
+			height: auto;
+		}
+
+		.image-product-big {
+			width: 620px;
+			height: auto;
+		}
+
+		// inline
+
+		.inline {
+			display: inline-block;
+		}
+
+		a, a:hover {
+			font: 16px 'robotomedium';
+			color: @blue;
+			text-decoration: underline;
+		}
+
 	}
 
 	.tm-container_local {
 		//width: auto;
 		//margin: 0 5%;
+		width: 100%;
 		display: grid;
 		grid-row-start:    header-start;
 		grid-row-end:      content-start;
