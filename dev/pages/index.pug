@@ -27,29 +27,33 @@ html(lang='ru')
           // item
 
           li
-            a(href="local.html" title="")
+            a.linkOne(href="#" title="")
               | История АО "ТЯЖМАШ"
+            ul.linksOneSub
+              li: a(href="#" title="") Презентация "История предприятия"
+              li: a(href="#" title="") Награды АО "ТЯЖМАШ"
+              li: a.linksSubClose(href="#" title="") Вернуться
 
           // item
 
           li
-            a(href="local.html" title="")
+            a.linkTwo(href="local.html" title="")
               | ГК "ТЯЖМАШ"
 
           li
-            a(href="local.html" title="")
+            a.linkThree(href="local.html" title="")
               | Продукция
 
           li
-            a(href="local.html" title="")
+            a.linkFour(href="local.html" title="")
               | Крупные реализованные проекты
 
           li
-            a(href="local.html" title="")
+            a.linkFive(href="local.html" title="")
               | Заводские династии
 
           li
-            a(href="local.html" title="")
+            a.linkSix(href="local.html" title="")
               | Видеогалерея                        
 
     // scripts

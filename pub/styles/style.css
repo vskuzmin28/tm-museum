@@ -140,6 +140,7 @@ textarea {
   }
   .navigation {
     padding: 0;
+    height: 430px;
   }
   .navigation li {
     text-align: center;
