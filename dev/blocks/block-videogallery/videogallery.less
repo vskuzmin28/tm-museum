@@ -2,15 +2,26 @@
 
 .videogallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .videogallery__item {
-    width: 20%;
+    width: auto;
 
     video {
         display: block;
-        width: 320px;
+        //width: 400px;
+        width: 90%;
+        height: 260px;
+    }
+
+    p {
+        margin-top: 14px;
+        width: auto;
+        font: 16px 'robotoregular';
+        line-height: 24px;
+        color: @blue;
+        //text-align: center;
     }
 
 }
