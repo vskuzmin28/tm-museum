@@ -87,6 +87,10 @@ textarea {
     width: 620px;
     height: auto;
   }
+  .tm-content .image-product-full {
+    width: 100%;
+    height: auto;
+  }
   .tm-content .inline {
     display: inline-block;
   }
@@ -95,6 +99,15 @@ textarea {
     font: 16px 'robotomedium';
     color: #3285b3;
     text-decoration: underline;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .center {
+    margin: 0 auto;
   }
   .tm-container_local {
     width: 100%;
@@ -177,4 +190,15 @@ textarea {
   border-bottom: 1px solid #d1d1d1;
   display: grid;
   grid-template-columns: 1fr 140px;
+}
+.videogallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.videogallery__item {
+  width: 20%;
+}
+.videogallery__item video {
+  display: block;
+  width: 320px;
 }
