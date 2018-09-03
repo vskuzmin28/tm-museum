@@ -1,0 +1,80 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="shortcut icon" href="img/favicon.png" type="image/png")  
+    link(rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16")
+    link(rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96")
+    title ТЯЖМАШ | Интерактивный стол
+    link(rel='stylesheet', href='../styles/animate.css')
+    link(rel='stylesheet', href='../styles/style.css')
+  body
+
+    // main
+
+    main.tm-local.wow.fadeIn
+
+      // container
+
+      .tm-container.tm-container_local
+
+        // header
+
+        header.header
+
+          h1.title-publ
+            | Награды АО "ТЯЖМАШ"
+
+        // / header
+
+        // content
+
+        .tm-content
+
+          h2
+            | ОРДЕН ТРУДОВОГО КРАСНОГО ЗНАМЕНИ
+          p
+            | За успешное выполнение заданий правительства по строительству завода, за организацию производства локомобилей и за изготовление боеприпасов.   (июль 1945г)
+          
+          hr
+
+          h2
+            | ОРДЕН ОКТЯБРЬСКОЙ РЕВОЛЮЦИИ
+          p
+            | За заслуги  в создании и производстве новой техники для энергетической, горнодо-бывающей, космической и других отраслей народного хозяйства.  (июль 1976г.)
+
+          hr
+
+          h2
+            | ПЕРЕХОДЯЩЕЕ КРАСНОЕ ЗНАМЯ ГОСУДАРСТВЕННОГО КОМИТЕТА ОБОРОНЫ
+          p
+            | За первенство в социалистическом соревновании. (1942г)
+
+          hr
+
+          h2
+            | БЛАГОДАРНОСТЬ ПРЕЗИДЕНТА  РФ Д.А. МЕДВЕДЕВА
+          p
+            | За большой вклад в развитие тяжелого машиностроения, разработку и      выпуск высокотехнологичной продукции.  (29.12.2011г)
+
+          hr
+
+          h2
+            | БЛАГОДАРНОСТЬ ПРЕЗИДЕНТА РФ В.В. ПУТИНА
+          p
+            | За достигнутые трудовые успехи и высокие показатели в профессиональной деятельности. (12.04.2016г)
+
+          hr
+
+          p
+            | АО «ТЯЖМАШ» вошло в рейтинг пятидесяти крупнейших      технологических компаний России (21-я строка в рейтинге), которые занимаются разработкой и производством уникальных технологических продуктов и технологий.
+
+        include ../blocks/block-footer/footer.pug
+
+    // scripts
+
+    script(src="../js/jquery-3.2.1.min.js")
+    script(src="../js/wow.min.js")
+    script(src="../js/scripts.js")
