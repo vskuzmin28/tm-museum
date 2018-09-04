@@ -2,6 +2,10 @@
 
 new WOW().init();
 
+// init smooth scroll
+
+var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
+
 // navigation logic
 
 $('.linksOneSub, .linksTwoSub, .linksThreeSub, .linksFourSub, .linksFiveSub, .linksSixSub').hide();
