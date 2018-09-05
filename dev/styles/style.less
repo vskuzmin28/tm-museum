@@ -141,8 +141,8 @@ a, a:hover, li, img, input, textarea {
 		}
 
 		.image-product-normal {
-			width: 420px;
-			height: auto;
+			width: 420px !important;
+			height: auto !important;
 		}
 
 		.image-product-big {
@@ -153,6 +153,11 @@ a, a:hover, li, img, input, textarea {
 		.image-product-full {
 			width: 100%;
 			height: auto;
+		}
+
+		.image-product-reward {
+			height: 230px !important;
+			width: auto !important;
 		}
 
 		// inline
@@ -224,7 +229,7 @@ a, a:hover, li, img, input, textarea {
 
 	.navigation {
 		padding: 0;
-		height: 430px;
+		height: 460px;
 
 		li {
 			text-align: center;
@@ -247,6 +252,42 @@ a, a:hover, li, img, input, textarea {
 				line-height: 70px;
 			}
 
+		}
+
+	}
+
+}
+
+// page rewards
+
+.rewards {
+	//padding: 0 30%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 70px;
+	padding: 9% 0;
+	padding-right: 5% !important;
+
+	padding-bottom: 10px;
+	//border-bottom: 1px solid @grey;
+
+	.rewards__item {
+		//padding: 0 20%;
+		width: 100%;
+		//background: @red;
+		text-align: center;
+
+		h2 {
+			font-size: 22px;
+		}
+
+		img {
+			display: block;
+			width: auto;
+			height: 230px;
+			margin: 10px auto 20px auto;
+			//margin-bottom: 20px;
 		}
 
 	}

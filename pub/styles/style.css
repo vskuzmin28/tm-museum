@@ -99,8 +99,8 @@ textarea {
     height: auto;
   }
   .tm-content .image-product-normal {
-    width: 420px;
-    height: auto;
+    width: 420px !important;
+    height: auto !important;
   }
   .tm-content .image-product-big {
     width: 620px;
@@ -109,6 +109,10 @@ textarea {
   .tm-content .image-product-full {
     width: 100%;
     height: auto;
+  }
+  .tm-content .image-product-reward {
+    height: 230px !important;
+    width: auto !important;
   }
   .tm-content .inline {
     display: inline-block;
@@ -159,7 +163,7 @@ textarea {
   }
   .navigation {
     padding: 0;
-    height: 430px;
+    height: 460px;
   }
   .navigation li {
     text-align: center;
@@ -180,6 +184,28 @@ textarea {
   .navigation li ul li a:hover {
     line-height: 70px;
   }
+}
+.rewards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 70px;
+  padding: 9% 0;
+  padding-right: 5% !important;
+  padding-bottom: 10px;
+}
+.rewards .rewards__item {
+  width: 100%;
+  text-align: center;
+}
+.rewards .rewards__item h2 {
+  font-size: 22px;
+}
+.rewards .rewards__item img {
+  display: block;
+  width: auto;
+  height: 230px;
+  margin: 10px auto 20px auto;
 }
 .mb-10 {
   margin-bottom: 10px;
