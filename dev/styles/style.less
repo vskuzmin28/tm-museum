@@ -229,7 +229,7 @@ a, a:hover, li, img, input, textarea {
 
 	.navigation {
 		padding: 0;
-		height: 460px;
+		height: 490px;
 
 		li {
 			text-align: center;
@@ -297,6 +297,56 @@ a, a:hover, li, img, input, textarea {
 .mb-10 {
 	margin-bottom: 10px;
 }
+
+.photogallery-icon-home {
+	position: absolute;
+	z-index: 999;;
+	top: 40px;
+	right: 40px;
+
+	img {
+		width: 38px;
+		height: 38px;
+		color: @white;
+	}
+
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+
+  li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 1080px;
+	overflow: hidden !important;
+	left: 0;
+	top: 0;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+  }
+
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+  }
 
 // scroll button
 
